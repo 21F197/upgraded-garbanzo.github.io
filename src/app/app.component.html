@@ -1,0 +1,29 @@
+<header class="w-full flex gap-3 p-3 sticky top-0 items-center bg-zinc-900 backdrop-blur-lg bg-opacity-80 rounded-b-xl" style="z-index: 99">
+  <div class="flex-grow flex-shrink-0">
+    <a routerLink="/" class="w-fit flex items-center gap-1.5 cursor-pointer duration-500 group active:scale-95">
+    <span class="text-xl text-white"></span>
+    </a>
+  </div>
+  <nav class="flex gap-1.5 md:gap-3 lg:gap-6 duration-500 flex-shrink-0 items-center justify-center hidden md:flex">
+    <a routerLink="/home" class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Домашняя страница</a>
+    <a routerLink="/adres" class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Адреса</a>
+    <a routerLink="/sprki" class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Доп.материалы</a>
+    <a routerLink="/stat" class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Запись</a>
+    <a routerLink="/dok" class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Документация</a>
+  </nav>
+  <nav class="flex gap-1.5 md:gap-3 lg:gap-6 duration-500 flex-shrink-0 items-center justify-center flex md:hidden">
+    <div class="group relative flex">
+      <span class="h-7 text-sm sm:text-base text-gray-200 hover:text-white hover:font-bold px-1.5 py-0.5 bg-zinc-700 bg-opacity-0 duration-300 hover:bg-opacity-25 rounded-xl cursor-pointer active:scale-95 shadow">Меню</span>
+      <div class="p-1.5 bg-zinc-800 backdrop-blur-lg absolute top-7 right-0 hidden group-hover:flex duration-300 rounded-xl text-white shadow flex flex-col gap-1.5 w-fit">
+        <a routerLink="/" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Главная</a>
+        <a routerLink="/home" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Домашняя страница</a>
+    <a routerLink="/adres" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Адреса</a>
+    <a routerLink="/sprki" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Доп.материалы</a>
+    <a routerLink="/stat" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Запись</a>
+    <a routerLink="/dok" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Документация</a>
+        <span data-fancybox="" data-src="#selecttype" href="javascript:;" class="active:scale-95 rounded-md hover:bg-zinc-700 px-1.5 py-0.5 duration-500 cursor-pointer w-full">Каталог</span>
+      </div>
+    </div>
+  </nav>
+</header>
+<router-outlet class="flex flex-col gap-3 w-full"></router-outlet>
